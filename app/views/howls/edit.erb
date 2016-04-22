@@ -1,0 +1,12 @@
+<div class="edit-wrapper">
+	<div class="edit-howl">
+		<h1>Edit Howl Profile</h1>
+
+		<form action="/howls/<%= @howl.id %>"	method="post">
+			<input type="hidden"name="_method"			value="patch">
+			<input type="text"	name="image"				value="<%= @howl.image %>">	</br>
+			<input type="text"	name="text"	value="<%= @howl.text %>"></br>
+			<input type="submit"		value="Submit Changes">
+		</form>
+	</div>
+</div>

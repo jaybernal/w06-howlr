@@ -1,0 +1,14 @@
+*{
+	border: 2px dotted orange;
+}
+
+
+/**********new wolf*/
+.new-wrapper{
+	display: flex;
+	justify-content: center;
+}
+.new-wolf{
+	text-align: center;
+	width: 50%;
+}

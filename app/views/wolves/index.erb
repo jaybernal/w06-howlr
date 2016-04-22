@@ -1,0 +1,15 @@
+<h1>You have <%= @wolves.count %> in your pack</h1>
+
+<div>
+	<ul>
+		<%  @wolves.map do |wolf|%>
+		<li><%= wolf.name %></li>
+		<li><%= wolf.image %></li>
+		<li><%= wolf.description %></li>
+		<% end %>
+	</ul>
+</div>
+
+<div>
+	<a href="/wolves/new">NEW PACK MEMBER</a>
+</div>

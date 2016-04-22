@@ -1,0 +1,13 @@
+<div class="edit-wrapper">
+	<div class="edit-wolf">
+		<h1>Edit Wolf Profile</h1>
+
+		<form action="/wolves/<%= @wolf.id %>"	method="post">
+			<input type="hidden"name="_method"			value="patch">
+			<input type="text"	name="name"					value="<%= @wolf.name %>"></br>
+			<input type="text"	name="image"				value="<%= @wolf.image %>">	</br>
+			<input type="text"	name="description"	value="<%= @wolf.description %>"></br>
+			<input type="submit"		value="Submit Changes">
+		</form>
+	</div>
+</div>

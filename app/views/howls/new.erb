@@ -1,0 +1,20 @@
+<div class="new-wrapper">
+	<div class="new-howl">
+		<h1>Create a New Wolf</h1>
+
+		<form action="/howls"	method="post">
+			<input type="text"	placeholder="Profile Picture URL?"		name="image"				value="<%= @howl.image %>">	</br>
+			<input type="text"	placeholder="Edit Post" 							name="text"	value="<%= @howl.text %>"></br>
+			<input type="submit"		value="Create Wolf Name">
+		</form>
+	</div>
+</div>
+
+<div>
+		<div>
+		<a href="/howls">BACK</a>
+	</div>
+	<div>
+		<a href="#">JOIN THE PACK</a>
+	</div>
+</div>
