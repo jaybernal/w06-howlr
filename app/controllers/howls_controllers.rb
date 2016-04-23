@@ -1,6 +1,7 @@
 ############NEW
 get "/howls/new/?" do
 	@howl = Howl.new
+	@wolves = Wolf.all
 	erb :"howls/new"
 end
 
@@ -17,6 +18,7 @@ end
 ############INDEX
 get "/howls/?" do
 	@howls = Howl.all
+	@wolves = Wolf.all
 	erb :"howls/index"
 end
 

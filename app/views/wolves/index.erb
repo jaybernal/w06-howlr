@@ -2,9 +2,9 @@
 
 <div>
 	<ul>
-		<%  @wolves.map do |wolf|%>
+		<%  @wolves.each do |wolf|%>
 		<li><%= wolf.name %></li>
-		<li><%= wolf.image %></li>
+		<li><img src="<%= wolf.image %>" alt=""></li>
 		<li><%= wolf.description %></li>
 		<% end %>
 	</ul>
