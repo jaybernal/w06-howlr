@@ -2,6 +2,7 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+/*	border: 2px dotted orange;*/
 }
 
 .yield-container{
@@ -61,7 +62,7 @@
 
 
 /***********Howler Index **/
-
+.wolves-container h3,
 .howler-container h3{
 	text-align: center;
 }
@@ -106,6 +107,15 @@ border-radius: 100%;
 .howls-new-list{
 	border:none;
 	width: 100%;
+	transition: max-height 0.8s;
+}
+.howl-transition{
+		transition: max-height 0.8s;
+
+
+}
+.howl-transition:hover{
+	height: 10em;
 }
 
 .new-howl{
@@ -131,4 +141,13 @@ border-radius: 100%;
 	display: flex;
 	justify-content: space-between;
 }
+
+/***************Wolf Index***************/
+
+.index-wolf-image{
+	float: left
+}
+
+.index-test{
+	clear: both;
 }

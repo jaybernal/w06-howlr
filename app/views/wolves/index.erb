@@ -1,15 +1,21 @@
-<h1>You have <%= @wolves.count %> in your pack</h1>
-
-<div>
-	<ul>
-		<%  @wolves.each do |wolf|%>
-		<li><%= wolf.name %></li>
-		<li><img src="<%= wolf.image %>" alt=""></li>
-		<li><%= wolf.description %></li>
-		<% end %>
-	</ul>
-</div>
-
-<div>
-	<a href="/wolves/new">NEW PACK MEMBER</a>
+<div class="wolves-container">
+  <h3>You have <%= @wolves.count %> wolves in your pack</h3>
+  <div>
+    <ul>
+      <%  @wolves.each do |wolf|%>
+      <div class="index-test index-name-image-text-wrapper">
+        <div class="index-wolf-image">
+          <li><img src="<%= wolf.image %>" alt=""></li>
+        </div>
+        <div class="index-wolf-description">
+          <li><%= wolf.name %></li>
+          <li><%= wolf.description %></li>
+        </div>
+      </div>
+      <% end %>
+    </ul>
+  </div>
+  <div>
+    <a href="/wolves/new">NEW PACK MEMBER</a>
+  </div>
 </div>
