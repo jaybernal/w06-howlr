@@ -44,4 +44,3 @@ patch "/howls/:id/?" do
     erb :"howls/edit"
   end
 end
-

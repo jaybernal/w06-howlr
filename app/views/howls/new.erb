@@ -9,8 +9,8 @@
       </div>
       <div class="new-howl-input">
         <select name="wolf_id" class="howls-new-list">
-          <option value="" disabled selected hidden>Who's Howling</option>
           <% @wolves.each do |wolf| %>
+          <option value="" disabled selected hidden>Who's Howling?</option>
           <option placeholder="Howler"  value="<%= wolf.id %>"><%= wolf.name %></option>
           <% end %>
         </select></br>

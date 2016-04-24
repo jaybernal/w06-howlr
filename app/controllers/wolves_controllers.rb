@@ -43,4 +43,3 @@ patch "/wolves/:id/?" do
     erb :"wolves/edit"
   end
 end
-
