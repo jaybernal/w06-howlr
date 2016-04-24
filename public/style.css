@@ -1,10 +1,13 @@
 *{
-	border: 2px dotted orange;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
+.yield-container{
+	margin: auto;
+	width: 90%;
+}
 /*************Header**/
 
 .header-container{
@@ -14,22 +17,30 @@
 
 .header-wrapper{
 	width: 90%;
-	background: red;
+	background: #ea7794;
 	margin: auto;
+	box-shadow: 1px 4px 10px grey;
 }
 /*************Nav**/
 
 .nav-commands{
 	display: flex;
 	justify-content: space-between;
-	margin: 1em;
 }
 
+.new-buttons input,
+.new-buttons a,
 .nav-howl,
 .nav-pack{
-	background-color: red;
+	background-color: #B22222;
 	font-size: 10px;
+	box-shadow: 1px 4px 10px grey;
+	line-height: 3em;
+	width: 40%;
+	text-align: center;
+	color: white;
 }
+
 .nav-howl a,
 .nav-pack a{
 	color: white;
@@ -50,20 +61,34 @@
 
 
 /***********Howler Index **/
+
+.howler-container h3{
+	text-align: center;
+}
 .index-name-image-text-wrapper{
-	border: 2px solid black;
+	border: 2px solid #DCDCDC;
 	width: 90%;
 	margin: 10px auto;
+	box-shadow: 1px 4px 10px grey;
+	background-color:  #FFFFF0;
 }
 
 .index-name-image-wrapper{
 	display: flex;
 	align-items: center;
 }
+.index-howl-image{
+	text-align: right;
+}
 
 .index-howl-name,
 .index-howl-image{
 	width: 50%;
+}
+
+.index-howl-name,
+.index-howl-text{
+	margin-left: .5em;
 }
 img{
 	width: 4em;
@@ -71,6 +96,39 @@ height: 4em;
 border-radius: 100%;
 }
 
+.index-bar{
+	border-bottom: 2px solid #DCDCDC;
+	width: 90%;
+	margin: auto;
+}
 
+/***********new*******/
+.howls-new-list{
+	border:none;
+	width: 100%;
+}
 
+.new-howl{
+	width: 100%;
+}
+.new-howl-input,
+.new-howl-submit{
+	margin: 0;
+	padding: 1em;
+}
 
+.new-howl-input::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: -1px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #bab6b6;
+  }
+.new-buttons{
+	display: flex;
+	justify-content: space-between;
+}
+}

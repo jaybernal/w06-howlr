@@ -1,27 +1,27 @@
 <div class="new-wrapper">
 	<div class="new-howl">
-		<h1>Howl a Howl</h1>
-
 		<form action="/howls"	method="post">
-			<input type="text"	placeholder="Post a Picture"	name="image"value="<%= @howl.image %>">	</br>
-			<input type="text"	placeholder="Enter a Howl" 		name="text"	value="<%= @howl.text %>"></br>
-			
-			<select name="wolf_id">
-				<option value="" disabled selected hidden>Please Choose</option>
-				<% @wolves.each do |wolf| %>
-				<option placeholder="Howler"	value="<%= wolf.id %>"><%= wolf.name %></option>
-				<% end %>
-			</select></br>
-			
-			<input type="submit"		value="Create Wolf Name">
+			<div class="new-howl-input">
+				<input type="text"	placeholder="What are you howling about?" 			name="text"	value="<%= @howl.text %>" class="howls-new-list"></br>
+			</div>
+			<div class="new-howl-input">
+				<input type="text"	placeholder="Wanna share a picture? (optional)"	name="image"value="<%= @howl.image %>" class="howls-new-list">	</br>			
+			</div>
+			<div class="new-howl-input">
+				<select name="wolf_id" class="howls-new-list">
+					<option value="" disabled selected hidden>Who's Howling</option>
+					<% @wolves.each do |wolf| %>
+					<option placeholder="Howler"	value="<%= wolf.id %>"><%= wolf.name %></option>
+					<% end %>
+				</select></br>
+			</div>
+			<div class="new-howl-submit">
+				<div class="new-buttons">
+					<a href="/howls">BACK</a>
+				<input type="submit"		value="HOWL">
+				</div>
+			</div>
 		</form>
 	</div>
-
 </div>
 
-<div>
-	<a href="/howls">BACK</a>
-</div>
-<div>
-	<a href="#">JOIN THE PACK</a>
-</div>
